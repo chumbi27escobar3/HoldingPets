@@ -1,28 +1,29 @@
+package model;
 
 public class Pet {
 
 	//ATTRIBUTES
-	private String id;
+	private int id;
 	private String name;
 	private String date;
 	private char gender;
 	private String race;
 		
-	public Pet(String id, String name, String date, char gender, String race) {
+	public Pet(int id, String name, String date, char gender, String race) {
 			
 		this.id = id;
 		this.name = name;
 		this.date = date;
 		this.gender = gender;
 		this.race = race;
-	}
-
+	} 
+	
 	//GETTERS AND SETTERS 
-	public String getId() {
+	public int getId() {
 		return id;
 	}
 
-	public void setId(String id) {
+	public void setId(int id) {
 		this.id = id;
 	}
 

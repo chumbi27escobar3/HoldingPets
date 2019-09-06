@@ -1,3 +1,5 @@
+package model;
+import java.util.ArrayList;
 
 public class Owner {
 	
@@ -7,6 +9,8 @@ public class Owner {
 	private String lastName;
 	private String date;
 	private String typePetsFavorate;
+	//RELATION
+	private ArrayList<Pet> pets;
 	
 	public Owner(int id, String name, String lastName, String date, String typePetsFavorate) {
 		
@@ -15,9 +19,19 @@ public class Owner {
 		this.lastName = lastName;
 		this.date = date;
 		this.typePetsFavorate = typePetsFavorate;
+		
+		pets = new ArrayList<Pet>();
 	}
 
 	//GETTERS AND SETTERS
+	public ArrayList<Pet> getPets() {
+		return pets;
+	}
+
+	public void setPets(ArrayList<Pet> pets) {
+		this.pets = pets;
+	}
+	
 	public int getId() {
 		return id;
 	}
