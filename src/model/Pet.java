@@ -1,6 +1,8 @@
 package model;
 
-public class Pet {
+import java.util.Comparator;
+
+public class Pet implements Comparable<Pet>, Comparator<Pet>{
 
 	//ATTRIBUTES
 	private int id;
@@ -57,6 +59,18 @@ public class Pet {
 
 	public void setRace(String race) {
 		this.race = race;
+	}
+
+	@Override
+	public int compare(Pet o1, Pet o2) {
+		// TODO Auto-generated method stub
+		return 0;
+	}
+
+	@Override
+	public int compareTo(Pet arg0) {
+		// TODO Auto-generated method stub
+		return 0;
 	}
 		
 		
